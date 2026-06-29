@@ -1,8 +1,7 @@
-// =========================================================================
 // COMPONENTE: WEATHER INSIGHTS (Sugerencias de ropa y cuidado inteligente)
-// =========================================================================
 // Procesa el estado del clima actual y genera alertas/sugerencias dinámicas,
 // usando clases personalizadas de color para resaltar según el aviso.
+
 import React from "react";
 import { 
   Umbrella, 
