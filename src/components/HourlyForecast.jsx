@@ -1,8 +1,7 @@
-// =========================================================================
 // COMPONENTE: HOURLY FORECAST (Pronóstico para las próximas 24 horas)
-// =========================================================================
 // Renderiza un carrusel de desplazamiento horizontal que muestra el cambio de
 // temperatura y probabilidad de precipitaciones hora por hora.
+
 import React from "react";
 import { Clock } from "lucide-react";
 
@@ -41,7 +40,7 @@ export default function HourlyForecast({
             {/* Porcentaje de lluvia solo si es mayor que cero */}
             {horaItem.probLluvia > 0 && (
               <span className="text-[9px] bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded-md font-extrabold leading-none">
-                💧 {horaItem.probLluvia}%
+                 {horaItem.probLluvia}%
               </span>
             )}
           </div>
