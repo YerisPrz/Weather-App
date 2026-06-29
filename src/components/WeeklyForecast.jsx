@@ -1,8 +1,8 @@
-// =========================================================================
+
 // COMPONENTE: WEEKLY FORECAST (Pronóstico para los siguientes 7 días)
-// =========================================================================
 // Muestra una lista vertical estructurada de las predicciones del clima,
 // incluyendo condiciones estimadas, probabilidad de lluvias y temperaturas extremas.
+
 import React from "react";
 import { Compass, Umbrella } from "lucide-react";
 
