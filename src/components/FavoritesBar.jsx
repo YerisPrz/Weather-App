@@ -1,6 +1,4 @@
-// =========================================================================
 // COMPONENTE: BARRA DE CIUDADES FAVORITAS
-// =========================================================================
 // Este componente muestra las ciudades que el usuario guardó.
 // Desde aquí puede abrir una ciudad rápidamente
 // o quitarla de la lista de favoritos.
@@ -23,7 +21,7 @@ export default function FavoritesBar({
     // Evita que también se abra la ciudad al hacer clic en la X.
     e.stopPropagation();
 
-    // Creamos una nueva lista sin la ciudad que queremos borrar.
+    // Se crea una nueva lista sin la ciudad que queremos borrar.
     setFavoritos(
       favoritos.filter(
         (f) => f.toLowerCase() !== ciudadAEliminar.toLowerCase()
