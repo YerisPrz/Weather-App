@@ -1,6 +1,4 @@
-// =========================================================================
 // UTILIDADES Y FUNCIONES AUXILIARES DE CLIMA (weatherUtils.js)
-// =========================================================================
 // Este archivo contiene los diccionarios de traducción de códigos 
 // meteorológicos WMO de Open-Meteo, y mappers de iconos de Lucide.
 // Separar esto permite que el App.jsx principal sea simple y ordenado.
@@ -17,9 +15,8 @@ import {
   CloudLightning 
 } from "lucide-react";
 
-// -----------------------------------------------------------------------
 // MAPEO DE ICONOS DE LA LIBRERÍA "LUCIDE" (Sin un solo Emoji)
-// -----------------------------------------------------------------------
+
 export const renderIconClima = (codigo, clases = "h-6 w-6") => {
   if (codigo === 0) return <Sun className={`${clases} text-amber-500`} />;
   if (codigo === 1 || codigo === 2) return <CloudSun className={`${clases} text-sky-400`} />;
@@ -33,9 +30,9 @@ export const renderIconClima = (codigo, clases = "h-6 w-6") => {
   return <CloudSun className={`${clases} text-sky-400`} />;
 };
 
-// -----------------------------------------------------------------------
+
 // TRADUCTOR DE CÓDIGOS METEOROLÓGICOS WMO (A español simple)
-// -----------------------------------------------------------------------
+
 export const obtenerDescripcionClima = (codigo) => {
   if (codigo === 0) return "Cielo Despejado";
   if (codigo === 1) return "Mayormente Despejado";
@@ -55,9 +52,8 @@ export const obtenerDescripcionClima = (codigo) => {
   return "Nublado Variable";
 };
 
-// -----------------------------------------------------------------------
 // CONVERTIDOR Y FORMATEADOR DE TEMPERATURAS (Celsius / Fahrenheit)
-// -----------------------------------------------------------------------
+
 export const formatearTemp = (celsius, usarCelsius) => {
   if (usarCelsius) {
     return `${celsius}°C`;
@@ -66,9 +62,7 @@ export const formatearTemp = (celsius, usarCelsius) => {
   return `${fahrenheit}°F`;
 };
 
-// -----------------------------------------------------------------------
 // DETERMINADOR DEL COLOR DE GRADIENTE DE FONDO DINÁMICO
-// -----------------------------------------------------------------------
 export const obtenerEstiloFondo = (datosClima, modoOscuro) => {
   if (!datosClima) {
     return modoOscuro 
