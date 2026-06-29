@@ -1,6 +1,4 @@
-// =========================================================================
 // CEREBRO DE LA APLICACIÓN (useWeather.jsx)
-// =========================================================================
 // Aquí está la mayor parte del trabajo de la aplicación.
 // Este archivo busca el clima, guarda la información,
 // maneja los favoritos y controla lo que pasa en la app.
@@ -9,7 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function useWeather() {
 
-  // Aquí guardamos todo lo que la aplicación necesita recordar.
+  // Aquí guardo todo lo que la aplicación necesita recordar.
   const [textoBuscado, setTextoBuscado] = useState("");
   const [datosClima, setDatosClima] = useState(null);
   const [estaCargando, setEstaCargando] = useState(false);
@@ -17,13 +15,13 @@ export default function useWeather() {
   const [modoOscuro, setModoOscuro] = useState(false);
   const [usarCelsius, setUsarCelsius] = useState(true);
 
-  // Aquí cargamos las ciudades favoritas guardadas en el navegador.
+  // Aquí se cargan las ciudades favoritas guardadas en el navegador.
   const [favoritos, setFavoritos] = useState(() => {
     const guardados = localStorage.getItem("mis_ciudades_favoritas");
     return guardados ? JSON.parse(guardados) : ["Santo Domingo", "Madrid", "Miami", "Tokyo"];
   });
 
-  // Cada vez que cambian los favoritos, los guardamos en el navegador.
+  // Cada vez que cambian los favoritos, Se guardan en el navegador.
   useEffect(() => {
     localStorage.setItem("mis_ciudades_favoritas", JSON.stringify(favoritos));
   }, [favoritos]);
