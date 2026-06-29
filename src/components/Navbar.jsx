@@ -1,6 +1,4 @@
-// =========================================================================
 // COMPONENTE: BARRA DE ARRIBA DE LA APLICACIÓN
-// =========================================================================
 // Este componente muestra la parte de arriba de la página.
 // Aquí está el nombre de la app, el buscador y los botones
 // para cambiar la temperatura y el color de la pantalla.
