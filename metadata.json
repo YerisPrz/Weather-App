@@ -1,0 +1,6 @@
+{
+  "name": "Consulta de Clima",
+  "description": "Una hermosa y reactiva aplicación de consulta de clima en tiempo real, diseñada con React, Tailwind CSS y Open-Meteo, que incluye sugerencias de ciudades dinámicas con debounce, pronóstico de 7 días y estados interactivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
