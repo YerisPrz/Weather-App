@@ -1,8 +1,7 @@
-// =========================================================================
 // COMPONENTE: WEATHER CARD (Tarjeta principal del clima del día)
-// =========================================================================
 // Muestra de manera interactiva el reporte meteorológico actual de la ciudad
 // seleccionada con un diseño moderno tipo Bento Grid.
+
 import React from "react";
 import { 
   MapPin, 
